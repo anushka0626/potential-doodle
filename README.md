@@ -49,6 +49,22 @@ npm run build     # Build frontend
 npm start         # Start Express API
 ```
 
+## Deploy
+
+RepoPilot can deploy as a single Node web service because Express serves the built `dist/` frontend and keeps APIs under `/api`.
+
+Render settings:
+
+- Service type: Web Service
+- Build command: `npm install && npm run build`
+- Start command: `npm start`
+- Environment variables:
+  - `OPENAI_API_KEY`
+  - `GITHUB_TOKEN`
+  - `OPENAI_MODEL` optional, for example `gpt-4.1-mini`
+
+Do not commit `.env`; add secrets only in the hosting provider dashboard.
+
 ## Demo Repositories
 
 The dashboard includes deterministic fixtures for:
