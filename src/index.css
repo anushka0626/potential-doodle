@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #080b10;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    #080b10;
+  background-size: 36px 36px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+pre::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+pre::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+pre::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+}
+
+pre::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
